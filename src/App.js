@@ -7,7 +7,7 @@ import Withdraw from "./components/Withdraw";
 import telegramAuth from "./telegram/telegram";
 import axios from "axios";
 
-const API = "http://localhost:4000";
+const API = process.env.REACT_APP_API_URL || "http://localhost:4000";
 
 export default function App() {
   const [token, setToken] = useState(null);
