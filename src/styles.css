@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0f0f0f;
+  color: #00fff7;
+  overflow-x: hidden;
+}
+
+.cyberpunk-app {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  padding: 10px;
+  border-bottom: 3px solid #0ff;
+}
+
+.nav-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+.page-container {
+  padding: 30px;
+}
+
+.cyber-card {
+  background: rgba(0, 255, 247, 0.1);
+  border: 2px solid #00fff7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00fff7;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.cyber-button {
+  background: transparent;
+  border: 2px solid #ff00ff;
+  padding: 10px 20px;
+  color: #ff00ff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.cyber-button:hover {
+  background: #ff00ff;
+  color: black;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.glitch {
+  position: relative;
+  font-size: 2.5rem;
+  color: #0ff;
+  text-transform: uppercase;
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 4px #0ff, 0 0 12px #0ff, 0 0 24px #0ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.neon {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 20px #ff00ff;
+}
